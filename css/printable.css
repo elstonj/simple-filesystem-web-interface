@@ -1,0 +1,229 @@
+/******************* REDEFINES ******************/
+a { 
+    text-decoration: none;
+    color: #777777;
+    background-color: transparent;
+}
+a:hover { 
+    text-decoration: none;
+    color: #aaaaaa;
+    background-color: transparent;
+}
+a:visited { 
+    text-decoration: none;
+    color: #999999;
+    background-color: transparent;
+}
+body {
+    font: 70% "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+form {
+    display: inline;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+    background-color: transparent;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 0.5em;
+    border-bottom: 1px solid black;
+}
+h1 {font-size: 140%;}
+h2 {font-size: 130%;}
+h3 {
+    font-size: 120%;
+    border-bottom: none;
+    font-weight: bold;
+}
+h4 {
+    font-size: 100%;
+    border-bottom: none;
+    font-weight: bold;
+}
+h5 {
+    font-size: 80%;
+    border-bottom: none;
+    font-weight: bold;
+}
+h6 {
+    font-size: 65%;
+    border-bottom: none;
+    font-weight: bold;
+}
+hr {
+  height: 1px; 
+  color: black;
+  background-color: transparent;
+  border-bottom-color: black;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+input {
+    font-size: 90%;
+}
+table {
+    font-size: 100%;
+}
+/******************* CLASSES ******************/
+.floatleft{
+  float:left;
+  margin: 0.2em;
+  height: 150px;
+  width: 200px;
+  text-align: center;
+}
+.floatright{
+  float:right;
+  margin: 0.5em;
+}
+.menu {
+  border: none;
+  margin-bottom: 1em;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+.menu h4 {
+    font-size: 1em;
+    font-weight: normal;
+    white-space: nowrap;
+}
+.menu h5 {
+    background: transparent;
+    border: 1px dotted black;
+    border-style: none none solid none;
+    padding: 0em 1em;
+    text-transform: lowercase;
+    display: inline;
+    font-size: 1em;
+    height: 1em;
+    font-weight: normal;
+    white-space: nowrap;
+}
+.menuBody {
+    background: transparent;
+    border-collapse: collapse;
+    border: none;
+    padding: 1em;
+}
+.menu h1,
+.menu h2,
+.menu h3,
+.menu h4 {
+    margin: 0;
+    padding: 0;
+}
+.menu ul,
+.menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+    line-height: 1em;
+}
+.padding {
+    padding: 1em;
+}
+.captionedPicture {
+  margin: 0;
+  position: relative;
+  display: block;
+  background-color: transparent;
+  text-decoration: none;
+  text-align: left;
+  float: left;
+  width: 100%;
+}
+/******************* DIVISIONS ******************/
+#logo {
+    border: 0;
+    margin: 0.15em 0em -1em -0.2em;
+    padding: 0;
+}
+#logo a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.6em;
+    overflow: hidden;
+    border: 0;
+    margin: 0em 0em 0.8em 0em;
+    padding: 0.4em 0em 0.8em 3em;
+    cursor: pointer;
+}
+#tab {
+    background-color: transparent;
+    border-collapse: collapse;
+    padding: 0em 2em;
+    white-space: nowrap;
+    list-style: none;
+    margin: 0;
+    height: auto;
+    line-height: normal;
+}
+#tab li {
+    display: inline;
+}
+#tab li a {
+    background-color: transparent;
+    border-color: black;
+    border-width: 1px;
+    border-style: none solid none none;
+    color: #aaaaaa;
+    height: auto;
+    padding: 0em 1em;
+    text-decoration: none;
+    text-transform: lowercase;
+}   
+#tab li.selected a {
+    color: black;
+}
+#tab li.plain a:hover {
+    color: red;
+}
+#topbar{
+    line-height: 1.3em;
+    color: Black;
+    padding: 0em 3em;
+    margin: 0;
+    text-align: right;
+    text-transform: lowercase;
+    list-style: none;
+    white-space: nowrap;
+}   
+#columns {
+    width: 100% !important;
+}
+#right-column{
+    vertical-align: top;
+    width: 20em;
+}
+#center-column{
+    vertical-align: top;
+    margin: 0;
+    padding: 1em;
+}
+#left-column{
+    vertical-align: top;
+    width: 15em;
+}
+#content{
+  font-size: 110%;
+  margin: 10px;
+  width: 100%
+}
+#content a{
+  line-height: 1em;
+}
+#footer {
+  float: none;
+  text-align: right;
+  padding: 0em 4em;
+  white-space: nowrap;
+}
