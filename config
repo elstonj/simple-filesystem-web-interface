@@ -3,8 +3,8 @@
 $templateDir="templates";
 $title="simple perl web interface";
 $defaultTemplate="printable";
-$rootDir="website/";
-$baseHref="website/";
+$rootDir="data/";
+$baseHref="data/";
 $pathToScript="index.cgi";
 $passwordFile="passwd";
 $sessionFile="session";

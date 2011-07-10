@@ -1,1 +1,9 @@
-Will update soon...
+Requirements:
+ * Perl with CGI and LWP packages
+ * Webserver and permissions to execute scripts
+
+INSTALL:
+
+Update the variables found in config and either symlink or create content in the data directory.  Everything in this directory will then be used to create web content for any traffic to the base directory (which fetches index.cgi).
+
+More details to follow.
