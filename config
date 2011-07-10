@@ -1,13 +1,13 @@
 #!/usr/bin/perl
 
-$templateDir="templates";
+$templateDir="./templates";
 $title="simple perl web interface";
 $defaultTemplate="printable";
-$rootDir="data/";
+$rootDir="./data/";
 $baseHref="data/";
 $pathToScript="index.cgi";
 $passwordFile="passwd";
 $sessionFile="session";
 $maxUploadFileSize="10000"; #Kb
-@uploadTypes=("txt","jpg","png","pdf")
+@uploadTypes=("txt","jpg","png","pdf");
 $loginTimeOut = 1870; #sec

@@ -23,18 +23,19 @@
 use CGI qw(:standard);
 use CGI::Carp qw(fatalsToBrowser);
 use LWP::Simple;
+use Switch;
 
 #--------USER INPUT---------
 eval(`cat config`);
 #--------USER INPUT---------
 
 $input = new CGI;
-$dir = $input->param("dir");
+$dir = $input->param('dir');
 $num = $input->param('num');
 $perpage = $input->param('perpage');
-$session = $input->param("session");
-$section = $input->param("section");
-$template = $input->param("template");
+$session = $input->param('session');
+$section = $input->param('section');
+$template = $input->param('template');
 
 if(!$template) {$template = $defaultTemplate;}
 if(! -e "$templateDir/$template.html") {$template = $defaultTemplate;}
@@ -96,8 +97,24 @@ foreach (@menus) {$menus=$menus."\n".$_;}
 
   #-----[ print page ]-----#
 
+$footer = '
+  <div class="padding">&nbsp;</div>
+    <div id="footer">
+      Website by elstonj himself : 
+      Jack Elston
+    </div>
+  </div>';
+
+$title = "
+  <h1 id=\"logo\">
+    <a href=\"\">
+		$title
+    </a>
+  </h1>";
+
 $resultPage=~s/<!-- head -->/$head/g;
 $resultPage=~s/<!-- body -->/$body/g;
+$resultPage=~s/<!-- title -->/$title/g;
 $resultPage=~s/<!-- tabs -->/$tabs/g;
 $resultPage=~s/<!-- menus -->/$menus/g;
 $resultPage=~s/<!-- header -->/$header/g;
